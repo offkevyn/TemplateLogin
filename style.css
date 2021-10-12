@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0D181E;
+}
+
+.box{
+    width: 300px;
+    height: 310px;
+    position: absolute;
+    background-color: #151e23;
+    left: calc(50% - 150px);
+    top: calc(50% - 200px);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+ h1{
+    display: inline-block;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    margin: 0;
+    filter: drop-shadow(-5px 5px #0D181E );
+
+    background-image: linear-gradient(to bottom right, #72a3bb , #1d2a35);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+ hr{
+    border-color: #37ff1441;
+    height: 2px;
+    margin-bottom: 10px;
+ }
+
+ .divInput
+ {
+    position: relative;
+    text-align: center;
+    left: 25px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    transition: 0.25s;
+ }
+
+.divInput span
+{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #9875DD;
+    border-radius: 100%;
+}
+
+.divInput span i
+{
+    padding-top: 11px;
+    color: #4514A4;
+    font-size: 19px;
+}
+
+ /*  Todos os inputs, menos os do tipo button  */
+ input:not(input[type = button])
+ {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 50px;
+    background-color: #151e23;
+    border: 2px #192FA4 solid;
+    transition: 0.25s;
+    color: white;
+    caret-color: #9875DD;
+ }
+
+/*  Todos os inputs, menos os do tipo button  */
+.box form input:not(input[type = button]):focus
+ {
+   outline: 0;
+   border-color: #4514A4;
+ }
+
+ .divInput:focus-within
+ {
+   left: 0px;
+   width: 250px;
+ }
+
+ ::placeholder 
+ {
+    color: white;
+    opacity: 0.7;
+ }
+
+ input[type = button]
+ {
+    width: 100px;
+    height: 35px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border-color: #4514A4;
+    cursor: pointer;
+    border-radius: 20px;
+ }
+
+ input[type = button]:hover
+ {
+
+    color: white;
+    background-color: #4414a452;
+ }
